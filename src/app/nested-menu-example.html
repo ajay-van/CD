@@ -1,0 +1,279 @@
+<!-- <mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+  </mat-grid-tile>
+</mat-grid-list> -->
+<!-- <style>
+.example-container1 {
+  display: flex;
+  flex-direction: row;
+  height:5px;
+}
+
+.example-container > * {
+  width: 100%;
+}
+.pad{
+  padding: 20px;
+}
+mat-slider {
+  width: 500px;
+}
+
+</style>
+
+
+<mat-card>
+    <mat-divider></mat-divider>
+    <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header style="background-color:darkturquoise">
+            <mat-panel-title style="color:blueviolet;">
+              Personal Information..
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+    <form>
+    <div class="example-container1 example-container">
+        <mat-form-field class="pad">
+          <input matInput placeholder="Name">
+        </mat-form-field>
+        <mat-form-field class="pad">
+          <input matInput placeholder="Email">
+        </mat-form-field>
+        <mat-form-field class="pad">
+          <mat-select placeholder="Select" >
+            <mat-option value="male">Male</mat-option>
+            <mat-option value="female">Female</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      
+    <mat-card-actions class="row text-right footer" style="padding-top: 60px">
+      <span>
+          <mat-slide-toggle style="padding:20px">Agree</mat-slide-toggle>
+      </span>
+          <button  mat-button style="padding-left:20px"><span class="mat-button-wrapper">Save</span></button>
+      </mat-card-actions>
+    </form>
+    <mat-divider></mat-divider>
+    @Launch.Yor data is safe..
+  </mat-expansion-panel>
+</mat-accordion>
+</mat-card>
+
+<mat-card>
+    <mat-divider></mat-divider>
+    <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header style="background-color:darkturquoise">
+            <mat-panel-title style="color:blueviolet" >
+              Educational Details & Experience.
+            </mat-panel-title>
+            
+          </mat-expansion-panel-header>
+          <mat-tab-group>
+              <mat-tab label="SSC">
+                  <form>
+                      <mat-form-field class="pad">
+                          <mat-select placeholder="Board" >
+                            <mat-option value="State">State</mat-option>
+                            <mat-option value="Cbse">Central</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="pad">
+                            <input matInput placeholder="School Name">
+                          </mat-form-field>
+                          <mat-form-field class="pad">
+                              <mat-select placeholder="Select" >
+                                <mat-option value="FirstClass">Grade 1</mat-option>
+                                <mat-option value="SecondClass">Grade 2</mat-option>
+                                <mat-option value="ThirdClass">Grade 3</mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                            <button mat-button (click)="openSnackBar()">
+                                Submit
+                              </button>
+                            <button  mat-button style="padding-left:20px"><span class="mat-button-wrapper">Next</span></button>
+                  </form>
+              </mat-tab>
+              <mat-tab label="Experience">
+                  <form>
+                      <mat-form-field class="pad">
+                          <mat-select placeholder="Work Experience In Years" >
+                            <mat-option value="1">1</mat-option>
+                            <mat-option value="2">2</mat-option>
+                            <mat-option value="3">3</mat-option>
+                            <mat-option value="4">4</mat-option>
+                            <mat-option value="5">5</mat-option> 
+                            <mat-option value="6">6+</mat-option>
+                            <mat-option value="10">10+</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="pad">
+                            <input matInput placeholder="Previous Company">
+                          </mat-form-field>
+                          <button mat-button (click)="openSnackBar()">
+                              Submit
+                               </button>
+                          <button  mat-button style="padding-left:20px"><span class="mat-button-wrapper">Next</span></button>
+                  </form>
+              </mat-tab>
+              <mat-tab label="Certifications">
+                  <form>
+                      <mat-form-field class="pad">
+                          <mat-select placeholder="Certificate Type" >
+                            <mat-option value="MS">MicroSoft</mat-option>
+                            <mat-option value="OR">Oracle</mat-option>
+                            <mat-option value="GO">Google</mat-option>
+                            <mat-option value="OT">Others</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="pad">
+                            <input matInput placeholder="Certificate Name">
+                          </mat-form-field>
+                          <button mat-button (click)="openSnackBar()">
+                              Submit
+                            </button>
+                          <button  mat-button style="padding-left:20px"><span class="mat-button-wrapper">Next</span></button>
+                  </form>
+              </mat-tab>
+              <mat-tab label="Expected Salary">
+                  <form>
+                    <div>
+                    <span>Slide on it</span>
+                  </div>
+                      <mat-slider
+                      thumbLabel
+                      [displayWith]="formatLabel"
+                      tickInterval="1000"
+                      min="1"
+                      max="100000"></mat-slider>
+                  </form>
+              </mat-tab>
+            </mat-tab-group>
+   
+    <mat-divider></mat-divider>
+    @Launch.Yor data is safe..
+  </mat-expansion-panel>
+</mat-accordion>
+</mat-card>
+ -->
+<!-- <mat-grid-list cols="4" rowHeight="1:2" >
+  <mat-grid-tile
+  *ngFor="let tile of tiles"
+  [colspan]="tile.cols"
+  [style.background]="tile.color">
+{{tile.text}}</mat-grid-tile>
+</mat-grid-list> -->
+<!-- <mat-card>
+<button mat-button [matMenuTriggerFor]="details">OverView</button>
+<mat-menu #details="matMenu" >
+<div *ngFor="let dat of keys">
+<div *ngIf="data[dat].length>0;else other_content">
+  <button mat-menu-item [matMenuTriggerFor]="sub_menu1">{{dat}}</button>
+</div>
+<ng-template #other_content>
+    <button mat-menu-item >{{dat}}</button>
+</ng-template>
+  <mat-menu #sub_menu1="matMenu" >
+    <div *ngFor="let subItem of data[dat]">
+        <button  mat-menu-item>{{ subItem }}</button>
+    </div>
+  </mat-menu>
+</div>
+</mat-menu>
+</mat-card> -->
+
+<!-- <mat-card>
+<mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side">Sidenav content</mat-sidenav>
+    <mat-sidenav-content>Main content</mat-sidenav-content>
+  </mat-sidenav-container>
+</mat-card> -->
+
+<!-- <div>
+    <div class="container">
+        <div [hidden]="submitted">
+          <h1>{{bhi}}</h1>
+          <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name"
+                     required
+                     [(ngModel)]="namecan" name="name"
+                     #name="ngModel">
+              <div [hidden]="name.valid || name.pristine"
+                   class="alert alert-danger">
+                Name is required
+              </div>
+            </div>
+          </form>
+      {{namecan}}
+            <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+         
+          </div>
+  </div>
+  <div>
+  
+  </div>
+
+</div>
+<div>
+  <form class="form-inline" #form="ngForm" (ngSubmit)="setCenter($event)" >
+    <div class="form-group">
+      <input type="text" class="form-control" name="latitude" [(ngModel)]="latitude" placeholder="Enter latitude" required>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="longitude" [(ngModel)]="longitude" placeholder="Enter longitude" required>
+    </div>
+    <div class="form-group">
+      <select class="form-control" id="type" [(ngModel)]="type" name="type">
+        <option>HYBRID</option>
+        <option>ROADMAP</option>
+        <option>SATELLITE</option>
+        <option>TERRAIN</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Go</button>
+  </form>
+</div>
+<div #gmap style="width:100%;height:400px"></div> -->
+
+
+<!-- <table>
+  <thead>
+      <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>amount</th>
+      </tr>
+  </thead>
+{{expenses|json}}
+  <tbody>
+      <tr *ngFor="let expense of expenses">
+          <td>{{expense.id}}}</td>
+          <td>{{expense.name}}</td>
+          <td>{{expense.amount}}</td>
+      </tr>
+  </tbody>
+</table> -->
+<label>Employee..</label>
+<table style="width:50%">
+  <tr>
+    <th name="EmployeeId">Address</th>
+    <th>Department</th> 
+    <th>EmployeeId</th>
+    <th>EmployeeName</th>
+  </tr>
+  {{Employee|json}}
+  <tr *ngFor="let do of Employee">
+    <td id="Address">{{do.Address}}</td>
+    <td id="Department">{{do.Department}}</td>
+    <td>{{do.EmployeeId}}</td>
+    <td id="EmployeeName">{{do.EmployeeName}}</td>
+  </tr>
+</table>

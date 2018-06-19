@@ -1,0 +1,35 @@
+{
+  "index": "/index.html",
+  "assetGroups": [{
+    "name": "my-appp",
+    "installMode": "prefetch",
+    "resources": {
+      "files": [
+        "/favicon.ico",
+        "/index.html",
+        "/*.css",
+        "/*.js"
+      ],
+      "versionedFiles": [
+        "/*.*.css",
+        "/*.*.js",
+        "/*.*.js"
+      ],
+      "external": {         
+        "urls": [
+                {"url": "https://fonts.googleapis.com/..."},
+                {"url": "https://fonts.gstatic.com/s/..."}         
+        ]     
+   }
+    }
+  }, {
+    "name": "assets",
+    "installMode": "lazy",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "/assets/**"
+      ]
+    }
+  }]
+}
