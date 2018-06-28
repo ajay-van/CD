@@ -44,8 +44,7 @@ public getExpenses() {
       Address: "New Delhi",
       Department:"IT",
       EmployeeId:1,
-      EmployeeName:"Mukesh Kumar",
-      
+      EmployeeName:"Mukesh Kumar"
   },
 ];
 
