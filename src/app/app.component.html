@@ -10,4 +10,10 @@
 <div>
   <app-dynamic-form [questions]="data" ></app-dynamic-form>
 </div> -->
-<nested-menu-example>loading</nested-menu-example>
+<!-- <nested-menu-example>loading</nested-menu-example> -->
+<nav>
+  <a routerLink="route1" routerLinkActive="active">route1</a><br>
+  <a routerLink="route2" routerLinkActive="active">route2</a><br>
+  <a routerLink="parent" routerLinkActive="active">parent</a><br>
+</nav>
+<router-outlet></router-outlet>

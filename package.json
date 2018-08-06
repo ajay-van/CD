@@ -8,6 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "build_prod": "ng build --prod --output-path=prod_dist --source-map=false",
     "jenkinbuild":"npm install && ng build",
     "ngsw-config": "node_modules/.bin/ngsw-config my-appp/ngsw-config.json",
     "ngsw-copy": "cp node_modules/@angular/service-worker/ngsw-worker.js dist/my-appp",

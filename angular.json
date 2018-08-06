@@ -21,7 +21,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/config"
             ],
             "styles": [
               {
@@ -55,7 +56,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-appp:build"
+            "browserTarget": "my-appp:build",
+            "port": 4202
           },
           "configurations": {
             "production": {

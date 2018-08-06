@@ -261,19 +261,24 @@ mat-slider {
       </tr>
   </tbody>
 </table> -->
-<label>Employee..</label>
-<table style="width:50%">
-  <tr>
-    <th name="EmployeeId">Address</th>
-    <th>Department</th> 
-    <th>EmployeeId</th>
-    <th>EmployeeName</th>
-  </tr>
-  {{Employee|json}}
-  <tr *ngFor="let do of Employee">
-    <td id="Address">{{do.Address}}</td>
-    <td id="Department">{{do.Department}}</td>
-    <td>{{do.EmployeeId}}</td>
-    <td id="EmployeeName">{{do.EmployeeName}}</td>
-  </tr>
+<!-- <label>Employee..</label> -->
+<!-- <table style="width:50%" *ngFor="let head of headers">
+  <th>{{head}}</th>
+ <tr *ngFor="let do of testdata">
+  <td *ngIf="head==do.attributeType">{{do.attributeType}}</td>
+  <td *ngIf="head==do.attributeType">{{do.parentName}}</td>
+  <td *ngIf="head==do.attributeType">{{do.Name}}</td>
+ </tr>
+</table> -->
+<table style="width:50%" >
+  <tr *ngFor="let do of testdata">
+  <td><child-test [data]='do.attributeType'></child-test></td>
+  <td>{{do.attributeType}}</td>
+  <td>{{do.parentName}}</td>
+  <td>{{do.Name}}</td>
+  <button type="submit" (click)="delete(do)" >Go</button>
+ </tr>
+ 
 </table>
+<app></app>
+<button type="button" (click)="datahttp()" >Goooo</button>
