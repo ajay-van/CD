@@ -1,3 +1,4 @@
+import { Component } from '@angular/core';
 import 'hammerjs';
 import{DataService} from './htmldataservice';
 import{HtmlModel} from './model';
