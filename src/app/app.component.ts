@@ -15,6 +15,7 @@ export class AppComponent {
   data:HtmlModel<any>[]
   title = 'app';
 constructor(private ds:DataService){
+  //COMMENTED TO COMMIT
  //this.data= this.ds.getQuestions()
 }
 }
